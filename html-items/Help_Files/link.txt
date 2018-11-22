@@ -1,0 +1,28 @@
+https://devitems.com/html/tricon-preview/tricon/feature.html
+
+http://gj-designs.in/effecty/preview/
+
+http://gj-designs.in/pethouse/
+
+https://devitems.com/html/tricon-preview/tricon/index-3.html
+
+
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+
+
+/******* design structure ****/
+https://themeforest.net/item/edufair-multipurpose-html-template-for-education/21088720?s_rank=15
+https://www.demo.canyonthemes.com/html/capacious/v1/index.html
+https://demo-themelocation.co/hiredmen-plumbing/
+http://thememascot.net/demo/personal/m/petcarepress/v3.0/demo/
+
+http://kalanidhithemes.com/live-preview/landing-page/eva/
+http://www.creativethemes.co.in/demo/interior&furniture/
+http://purehostbd.com/html/rumi-preview/
+https://themeforest.net/item/stuff-furniture-ecommerce-psd-template/18411293
+
+js code
+http://jsfiddle.net/gvee/LYqVk/1/

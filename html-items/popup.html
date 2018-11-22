@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<!-- main jquery scripts -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/custom.js"></script>
+
+<link rel='stylesheet' href='css/fontawesome/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/theme.css' type='text/css' media='all' />
+</head>
+
+<body>
+
+<a id="searchButton">click</a>
+
+<!-- overlay popup open -->
+<div class="searchHoverlayPopup">
+	<div class="formFlieldBoxAreaWrapper">
+    <a class="closeButton">x</a>
+    	<div class="formBox">
+    	<input type="text" placeholder="Search...." >
+        </div>
+    </div>
+</div>
+<!-- overlay popup closed -->
+
+
+<!-- search overlay popup open -->
+<script>
+$(document).ready(function(){
+	$('#searchButton').click(function(){
+		$('.searchHoverlayPopup').addClass('explore');
+	});
+	
+	$('.closeButton').click(function(){
+		$('.searchHoverlayPopup').removeClass('explore');
+	});
+	
+});
+</script>
+<!-- search overlay popup closed -->
+
+
+
+</body>
+</html>

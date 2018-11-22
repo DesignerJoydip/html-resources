@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+
+<!-- Meta Tags -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+
+<!-- Page Title -->
+<title>Page Title</title>
+
+<!-- Favicon and Touch Icons -->
+<!--<link href="images/favicon.png" rel="shortcut icon" type="image/png">
+<link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">-->
+
+<!-- main jquery scripts -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- plugin scripts -->
+<script src="js/plugins-script.js"></script>
+<script src="js/custom-script.js"></script>
+
+<!-- fonts stylesheet links -->
+<link rel='stylesheet' href='fonts/fontawesome/font-awesome.min.css' type='text/css' media='all' />
+
+<!-- main stylesheet links -->
+<link rel='stylesheet' href='css/bootstrap.min.css' type='text/css' media='all' />
+<link rel="stylesheet" href="css/plugins-style.css">
+
+<!-- theme stylesheet links -->
+<link rel='stylesheet' href='css/element-style.css' type='text/css' media='all' />
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+<script type="text/javascript">
+$(window).scroll(function() {    
+	var scroll = $(window).scrollTop();
+	console.log("scroll: "+scroll);
+	var windowHeight = $(window).height();
+	console.log("Window height: "+windowHeight);
+	//var documentHeight = $(document).height();
+	//console.log("Document height: "+documentHeight);
+	var windowCenter = $(window).height()/2;
+	console.log("window center: "+windowCenter);
+	var elemnt_1_Pos = $(".box").offset().top;
+	console.log("Element 1 Pos: "+elemnt_1_Pos);
+
+	if (windowCenter < scroll) {
+		//alert();
+		$(".box").addClass("color");
+	}else{
+		$(".box").removeClass("color");
+	}
+
+
+    // if (scroll >= 500) {
+    //     $(".clearHeader").addClass("darkHeader");
+    // }
+});
+</script>
+
+<style type="text/css">
+	.box{ width:300px; height:200px; background-color:red; }
+	.box.color{ background-color:yellow }
+</style>
+
+</head>
+
+<body style="background-color:#fff; height:2000px;">
+
+<div style="width:100%; display:inline-block; height: 700px;"></div>
+<div class="box"></div>
+
+</body>
+</html>
